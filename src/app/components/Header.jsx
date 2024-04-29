@@ -54,8 +54,8 @@ const Header = () => {
             <li>
               <div className="indicator hover:bg-transparent p-0 mt-4 mx-auto">
                 <span className="indicator-item badge badge-primary">{cartItems?.length || 0}</span> 
-                <Link href={"/cart"} className="btn btn-ghost rounded-full hover:bg-neutral">
-                  <img src="/cart-icon.svg" />
+                <Link href={"/checkout"} className="btn btn-ghost rounded-full hover:bg-neutral">
+                  <TbBasket size={'1.25rem'} />
                 </Link>
               </div>
             </li>
