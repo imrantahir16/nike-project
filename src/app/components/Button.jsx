@@ -1,6 +1,6 @@
 const Button = ({children, classes, onClick}) => {
   return (
-    <button className={`btn rounded-full ${classes} px-6`} onClick={onClick}>{children}</button>
+    <button className={`btn rounded-full ${classes}`} onClick={onClick}>{children}</button>
   )
 }
 export default Button

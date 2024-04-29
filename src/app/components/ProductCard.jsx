@@ -5,7 +5,7 @@ import Button from "./Button"
 import Modal from "./Modal";
 import AddToCart from "./AddToCart";
 import CartContext from "../context/CartContext";
-
+import { IoEyeOutline } from "react-icons/io5";
 const ProductCard = ({product, modalToggler}) => {
 
   const { addItemToCart } = useContext(CartContext);
@@ -26,7 +26,7 @@ const ProductCard = ({product, modalToggler}) => {
           <AddToCart onClick={handleAddToCart}>Add to cart</AddToCart>
           <div className="tooltip" data-tip="View product">
             <Button classes={"btn-ghost btn-circle px-0"} onClick={modalToggler} title="View product">
-              <img src="/eye-icon.svg"/>
+            <IoEyeOutline size={"1.125rem"} className="text-white" />
             </Button>
           </div>
         </div>

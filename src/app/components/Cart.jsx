@@ -18,7 +18,7 @@ const Cart = () => {
 
   return (
     <>
-      <section className="py-5 sm:py-7">
+      <section className="py-4 sm:py-6">
         <div className="container max-w-screen-xl mx-auto px-4">
           {cart?.cartItems?.length === 0 ? (<h2 className="text-3xl font-semibold mb-2 text-center text-neutral-100">
             Cart is empty!
@@ -31,15 +31,15 @@ const Cart = () => {
       {cart?.cartItems?.length > 0 && (
         <section className="py-10">
           <div className="container max-w-screen-xl mx-auto px-4">
-            <div className="flex flex-col md:flex-row gap-4">
-              <main className="md:w-3/4">
+            <div className="flex flex-col lg:flex-row gap-4">
+              <main className="lg:w-3/4">
                 <article className="shadow-sm rounded mb-5 p-3 lg:p-5">
                   {cart?.cartItems?.map((cartItem) => (
                     <CartItem key={`cartItem-${cartItem.id}`} cartItem={cartItem} />
                   ))}
                 </article>
               </main>
-              <aside className="md:w-1/4">
+              <aside className="lg:w-1/4">
                 <article className="border border-neutral shadow-sm rounded mb-5 p-3 lg:p-5">
                   <ul className="mb-5">
                     <li className="flex justify-between text-gray-600  mb-1">

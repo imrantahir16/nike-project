@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { useContext } from "react"
 import CartContext from "../context/CartContext";
+import { TbBasket } from "react-icons/tb";
 
 const Header = () => {
   const { cart } = useContext(CartContext);
@@ -34,10 +35,10 @@ const Header = () => {
                   <Link href={'/#products'} className="text-white text-base transition hover:bg-neutral rounded-full bg-transparent  active:text-white focus:text-white">Products</Link>
                 </li>
                 <li>
-                  <div className="indicator hover:bg-transparent p-0">
+                  <div className="indicator hover:bg-transparent p-0" style={{backgroundColor: 'transparent'}}>
                     <span className="indicator-item badge badge-primary">{cartItems?.length || 0}</span> 
-                    <Link href={"/checkout"} className="btn btn-ghost rounded-full hover:bg-neutral">
-                      <img src="/cart-icon.svg" />
+                    <Link href={"/checkout"} className="btn btn-ghost rounded-full hover:bg-neutral ">
+                      <TbBasket size={'1.25rem'} />
                     </Link>
                   </div>
                 </li>
